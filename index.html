@@ -6,9 +6,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
         
-       
+        .time{
+            display: flex; 
+            flex-wrap: wrap; 
+            background-color: rgba(0, 0, 0, 0.747); 
+            padding: 10px; 
+            justify-content: space-between; 
+            border-radius: 10px;
+        }
+        @media only screen and (max-width:555px) {
+            .time{
+                font-size: 5vw;
+            }
+            .title-1{
+            font-size: 7vw !important;
+        }
+        .aradas{
+            height: 100px !important;
+        }
+        }
         body{
-            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/gundiz.png) no-repeat ;
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/gundizzz.jpg) no-repeat ;
             background-size: cover;
             width: 100%;
             height: 100%;
@@ -17,7 +35,7 @@
         }
         @media only screen and (max-width:1825px) {
             body{
-                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/gundiz.png) fixed;
+                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/gundizzz.jpg) fixed;
                 background-size: cover;
                 width: 100%;
             }
@@ -156,7 +174,7 @@
                 </div>
                 <div id="l1 " class="text" style="height: 15vw;">
                     <h1 class="heading-2">
-                        <div style="display: flex; background-color: rgba(0, 0, 0, 0.747); padding: 10px; justify-content: space-between; border-radius: 10px;"> 
+                        <div class="time" style=""> 
                         <div id="days" style="margin-right: 5px;"></div>
                         <div id="hours" style="margin-right: 5px;"></div>
                         <div id="mins" style="margin-right: 5px;"></div>
@@ -186,8 +204,8 @@
                     <div style="display: flex;" class="img-steps">
                     <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 1.png" alt="">
                     </div>
-                    <div style="flex: 2;">
-                        <div style="font-size: 50px;">Step 1: The Forest of Trials</div>
+                    <div style="flex: 2;" class="title-1">
+                        <div style="font-size: 50px;" class="title-1">Step 1: The Forest of Trials</div>
                         <div>The first challenge is to navigate through the Forest of Trials, a dense and dangerous forest filled with obstacles and traps. The monster must use their skills to jump over gaps, avoid falling boulders, and defeat enemies along the way. At the end of the forest, they will encounter a wise old monster who will give them a clue to the next challenge.
                         </div>
                         <div>
@@ -202,7 +220,7 @@
                         <div style="margin-left: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 2.jpg" alt="">
                         </div>
                         <div style="flex: 2;">
-                            <div style="font-size: 50px;">Step 2: The Cavern of Darkness</div>
+                            <div style="font-size: 50px;" class="title-1">Step 2: The Cavern of Darkness</div>
                             The second challenge is to venture into the Cavern of Darkness, a pitch-black cave system with treacherous paths and dangerous creatures lurking in the shadows. The monster must use their wits to solve puzzles, avoid traps, and find their way through the maze-like cavern. At the end of the cavern, they will find a mysterious crystal that holds the key to the next challenge.
                             <div>
                                 第2章：闇の洞窟 <br>
@@ -219,7 +237,7 @@
                     <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 3.jpg" alt="">
                     </div>
                     <div style="flex: 2;">
-                        <div style="font-size: 50px;">Step 3: The Tower of Trials</div>
+                        <div style="font-size: 50px;" class="title-1">Step 3: The Tower of Trials</div>
                         <div>The third challenge is to climb the Tower of Trials, a towering structure that reaches the clouds. The tower is filled with deadly traps and enemies, and the monster must use their agility and combat skills to overcome them. As they ascend the tower, they will face increasingly difficult challenges until they reach the top.
                         </div>
                         <div>
@@ -235,7 +253,7 @@
                         <div style="margin-left: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 4.png" alt="">
                         </div>
                         <div style="flex: 2;">
-                            <div style="font-size: 50px;">Step 4: The Trial of Love</div>
+                            <div style="font-size: 50px;" class="title-1">Step 4: The Trial of Love</div>
                             <div>
                                 The final challenge is the Trial of Love, where the monster must face their greatest fears and prove their love for their partner. The monster must make a series of difficult choices that will test their courage and devotion, and ultimately, determine whether they are worthy of true love.
                             </div>
@@ -251,7 +269,7 @@
                     <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/love.png" alt="">
                     </div>
                     <div style="flex: 2;">
-                        <div style="font-size: 50px;">Conclusion</div>
+                        <div style="font-size: 50px;" class="title-1">Conclusion</div>
                         <div>
                             If the monster successfully completes all of the challenges, they will be reunited with their love and win the approval of their families. One more thing, we give you the girl monster you saved as a gift.
                             <p>But even if they fail, they will have learned valuable lessons about love, courage, and perseverance. They will have discovered the depth of their feelings for their partner, and they will know that they are willing to do anything to prove their love. Whether they succeed or fail, the monster will emerge from their journey stronger, wiser, and more compassionate than ever before.</p>
@@ -267,7 +285,7 @@
                     
                 </div>
                 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                    <div style="font-size: 30px; max-width: max-content; margin-top: 100px;">Send your wallet number to this email adress: <span style="color: rgb(147, 147, 243); cursor: pointer;" onclick="redirectToGmail()" name="mail">catomono.official@gmail.com</span></div>
+                    <div style="font-size: 5vw; max-width: max-content; margin-top: 100px;">Send your wallet number to this email adress: <span style="color: rgb(147, 147, 243); cursor: pointer;" onclick="redirectToGmail()" name="mail">catomono.official@gmail.com</span></div>
 
                 </form>
                 </li>
@@ -278,7 +296,7 @@
     
 
            
-                <div style="height: 700px;"></div>
+                <div class="aradas" style="height: 700px;"></div>
             
         <div id="team"></div>
     </div>
